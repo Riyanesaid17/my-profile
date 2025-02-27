@@ -1,0 +1,44 @@
+/* Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card img {
+  width: 150px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Card Title */
+.card h3 {
+  font-size: 20px;
+  color: #0055A4;
+}
+
+/* Grid Layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Cards */
+.cards .card {
+  flex-basis: 250px;
+  flex-grow: 1;
+  margin: 10px;
+}
